@@ -18,9 +18,27 @@ public class Person {
 
     }
 
+
+
     public String hello()
     {
-       return "Hello,My name is "+this.name+" and I am "+this.age+" and being a "+this.gender+".My interests are "+interest[0]+ " , "+interest[1]+" & "+interest[2];
+        String msg=" ";
+        String pan=" ";
+        for(int i=0;i<interest.length;i++)
+        {
+            if (i>0 && i<interest.length-1)
+            {
+                pan +=", ";
+            }
+            if(i==interest.length-1)
+            {
+                pan+=" and ";
+            }
+            pan+=interest[i];
+        }
+
+       msg="Hello,My name is "+this.name+" and I am "+this.age+" years of age, I am a "+this.gender+" person"+" .My interests are ";
+        return msg+pan+".";
     }
 
 

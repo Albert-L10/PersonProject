@@ -22,7 +22,7 @@ public class PersonMain {
 
 
         Person person_info=new Person(fName,fage,fGender,
-                new String[]{" listening to music","Watching movies","and learning new things."});
+                new String[]{"listening to music","Watching movies","learning new things"});
 
         System.out.println(person_info.hello());
     }
